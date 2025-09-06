@@ -1,0 +1,143 @@
+/* Reset universal */
+* {
+    margin: 0px;
+    padding: 0px;
+    line-height: 2.0;
+}
+
+/* Fondo del cuerpo con imagen */
+body {
+    background-image: url(https://tse3.mm.bing.net/th/id/OIP.dhYkkoU8ao5EO5hDrmef5AHaEo?r=0&cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment:scroll;
+    background-size: cover;
+}
+
+/* Sección superior de la página */
+header {
+    background-color: rgb(5, 0, 14, 0.5);
+    color: white;
+    padding-left: 1%;
+    padding-right: 0%;
+}
+
+/* Tabla interna de la sección superio */
+td {
+    border: none;
+}
+
+/* Título */
+#Nombre {
+    padding: 10px 30px 10px 10px;
+    font-size: 0.8rem;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Titulo {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Menú de navegación */
+#Navegacion {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color:blueviolet;
+    font-size: 1.3rem;
+    transition: 0.4s;
+}
+
+/* main */
+main {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Tabla principal */
+main table {
+    margin: 20px 10% 20px 10%;
+}
+
+/* Celda de la imagen */
+#imagen {
+    justify-content: left;
+}
+
+/* Configuración de la imagen */
+#imagen img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+/* efecto de la imagen con cursor */
+#imagen img:hover {
+    width: 85%;
+    transition: 2.0s;
+}
+
+/* celda de información */
+#informacion {
+    font-size: 1.5em;
+}
+
+/* efecto del cursor sobre párrafos dentro de la celda de información */
+#informacion p:hover {
+    font-size: 1.05em;
+    color:yellow;
+    transition: 1.5s;
+}
+
+/* efecto del cursor sobre el título dentro de la celda de información */
+#informacion h2:hover {
+    font-size: 1.55em;
+    transition: 1.5s;
+    color:aqua;
+}
+
+/* Título de la celda de información */
+#informacion h2 {
+    color: #fcf6a0;
+}
+
+#informacion h2 span {
+    font-size: 1.35em;
+    line-height: normal;
+    color:#faf390;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: rgb(240, 248, 255, 0.25);
+    padding: 10px 30px 10px 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: wheat;
+}

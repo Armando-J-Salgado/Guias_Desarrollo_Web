@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*Reset del espaciado de la página*/
+* {
+    margin: 0;
+    text-indent: 0%;
+}
+
+/* Modificaciones generales para el cuerpo de la página */
+body {
+    background-color: #D3D3D3;
+    color: #161A1D;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Encabezado del cuerpo */
+header {
+    background-color: #161A1D;
+    color: #BA181B;
+    text-align: center;
+    padding: 10px 20%;
+    line-height: 1.25;
+}
+
+/* Modificación del título y subtítulo */
+.titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #B1A7A6;
+}
+
+/* Menú de navegación */
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #660708;
+}
+
+.menu a {
+    color: #F5F3F4;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu a:hover {
+    color: #E5383B;
+    text-decoration: underline;
+}
+
+/* Personalización de la sección contenido */
+.Contenido {
+    line-height: 1.5;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+}
+
+.Contenido:hover {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 15px;
+    transition: all 0.25s;
+}
+
+.Contenido:hover p {
+    padding: 0 45px 20px 45px;
+}
+
+.Contenido p {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+
+/* Imágen de contenido */
+h3 + img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0px auto 10px auto;
+}
+
+/* Imágen de tabla */
+td img {
+    width: 80%;
+    max-width: 75px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+}
+
+/* Resaltado dentro de los párrafos del cuerpo */
+body span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Encabezados */
+.encabezado {
+    color:#660708;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 10px 0;
+}
+
+/* Sección de artículos */
+.Articulos {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.Articulos p {
+    padding-bottom: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.Articulos article {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Enlaces de articulos */
+.Articulos a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #161A1D;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Articulos a:hover {
+    font-size: 1.25em;
+    color: #BA181B;
+    transition: all 1s;
+}
+
+.Articulos a:visited {
+    color:#666161;
+}
+
+.Articulos a:link {
+    color:#161A1D;
+}
+
+/* Sección de la tabla */
+.ContenedorTabla {
+    background-color: #FFF;
+    margin: 15px 10%;
+    padding: 15px 10px;
+}
+
+.ContenedorTabla #TablaPersonajes {
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+#TablaPersonajes th, #TablaPersonajes td {
+    text-align: center;
+    border: 1px solid #B1A7A6;
+    padding: 5px 5px;
+    background-color: #e0dbdb;
+    color: #33373a;
+}
+
+#TablaPersonajes th {
+    font-size: 1.2em;
+    background-color: #660708;
+    color:#FFF;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: #161A1D;
+    color:#D3D3D3;
+    padding: 6px 10px;
+    margin-top: 20px;
+}
