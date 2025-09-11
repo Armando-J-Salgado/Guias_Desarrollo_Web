@@ -25,3 +25,48 @@ div.wrapper {
     margin: 0 auto;
     width: 80%;
 }
+
+section article {
+    background-color: rgba(33, 62, 74, 1);
+    margin-top: 20px;
+    padding: 12px;
+}
+
+section article p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+nav span a {
+    background-color: white;
+    border-right: 1px solid;
+    color: black;
+    font-size: 0.6rem;
+    float:left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav span a:hover{
+    background-color: #B2DFDB;
+}
+
+/* Punto número 21: Enlace con sitio externo a elenco */
+nav span a[href="http://www.sensacine.com/peliculas/pelicula-175305/reparto"]{
+    background-color: #9E9E9E;
+}
+/* Esto no lo solicitaba el ejemplo de la guía pero quería que mantuviera el efecto */
+nav span a[href="http://www.sensacine.com/peliculas/pelicula-175305/reparto"]:hover{
+    background-color: #B2DFDB;
+}
+
+/* Punto número 22: Primeras letras de los párrafos */
+.wrapper section article p::first-letter{
+    color: gold;
+    font-size: 1.5rem;
+}
+
+/* Punto número 23: Primera línea de cada uno de los párrafos del artículo 1 */
+div.wrapper section article:first-child p::first-line{
+    text-decoration: underline;
+}
