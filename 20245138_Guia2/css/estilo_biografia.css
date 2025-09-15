@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: #bfd1a7;
+    background-color: #184c32;
+    height: 12vh;
+}
+
+header h1 {
+    font-family: "Lugrasimo", cursive;
+    font-size: 2rem;
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 1%;
+}
+
+header hr {
+    width: 50%;
+    margin: 5px auto;
+}
+
+body {
+    background-color: #f2e4dd;
+}
+
+/* Esto permite dividir en dos columnas (navegación y contenido) */
+.Contenedor {
+    display: flex;
+    gap: 20px;
+    margin: 10px auto;
+    width: 90vw;
+}
+
+/* Esto permite editar la etiqueta nav */
+.Contenedor nav.Menu {
+    background-color: #fcfbf3;
+    width: 100%;
+}
+
+.Contenedor nav.Menu h2:first-child{
+    color:#184c32;
+    text-align: center;
+    margin: 20px auto 4px;
+    font-family: "Lugrasimo", cursive;
+}
+
+.Contenedor nav.Menu h2+hr{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.Contenedor nav.Menu ul{
+    list-style: none;
+    margin: 10px 20px;
+    height: 90%;
+} 
+
+nav.Menu ul li {
+    margin: 20px auto;
+    height: 60px;
+    text-align: left;
+    border: 1px solid #566412;
+    padding-left: 5%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+/* Edición de elementos de la lista especificos */
+nav.Menu li:nth-child(1), nav.Menu li:nth-child(2), nav.Menu li:nth-child(6){
+    padding-top: 9%;
+}
+
+nav.Menu li:nth-child(3), nav.Menu li:nth-child(5), nav.Menu li:nth-child(4) {
+    padding-top: 4%;
+} 
+
+nav.Menu li:nth-child(2n) {
+    border-left: solid 5px #184c32;
+}
+
+nav.Menu li:nth-child(2n+1){
+    border-left: solid 5px #6c8c11;
+}
+
+nav.Menu a {
+    text-decoration: none;
+    color:#566412;
+    padding: 10px 0;
+}
+
+nav.Menu ul li:hover {
+    background-color: #e4ece2;
+}
+
+nav.Menu a:hover {
+    font-style: italic;
+    color:#6c8c11;
+}
+
+/* Aquí va lo del contenido */
+section.Contenido {
+    background-color: #fcfbf3;
+    padding: 20px;
+}
+
+.FranjaConImagen {
+    display: flex;
+    gap: 20px;
+    margin: 0px auto 20px;
+}
+
+.FranjaConImagen article {
+    width: 70%;
+}
+
+.FranjaConImagen article h2{
+    font-family: "Lugrasimo", cursive;
+    font-size: 1.5em;
+    margin: 0 auto 10px;
+} 
+
+.FranjaConImagen article p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.FranjaConImagen img {
+    width: auto;
+    height: 45vh;
+    box-shadow: 6px 6px 5px #666262;
+    margin: 0px auto;
+}
