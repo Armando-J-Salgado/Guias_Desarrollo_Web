@@ -41,7 +41,7 @@ body {
 /* Esto permite editar la etiqueta nav */
 .Contenedor nav.Menu {
     background-color: #fcfbf3;
-    width: 100%;
+    width: 20%;
 }
 
 .Contenedor nav.Menu h2:first-child{
@@ -52,13 +52,13 @@ body {
 }
 
 .Contenedor nav.Menu h2+hr{
-    width: 50%;
+    width: 55%;
     margin: 0px auto;
 }
 
 .Contenedor nav.Menu ul{
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
     height: 90%;
 } 
 
@@ -75,11 +75,11 @@ nav.Menu ul li {
 }
 
 /* Edición de elementos de la lista especificos */
-nav.Menu li:nth-child(1), nav.Menu li:nth-child(2), nav.Menu li:nth-child(6){
+nav.Menu li:nth-child(1), nav.Menu li:nth-child(2), nav.Menu li:nth-child(6), nav.Menu li:nth-child(4){
     padding-top: 9%;
 }
 
-nav.Menu li:nth-child(3), nav.Menu li:nth-child(5), nav.Menu li:nth-child(4) {
+nav.Menu li:nth-child(3), nav.Menu li:nth-child(5) {
     padding-top: 4%;
 } 
 
@@ -106,10 +106,15 @@ nav.Menu a:hover {
     color:#6c8c11;
 }
 
+nav.Menu a:visited{
+    color:#566412;
+}
+
 /* Aquí va lo del contenido */
 section.Contenido {
     background-color: #fcfbf3;
     padding: 20px;
+    width: 80%;
 }
 
 .FranjaConImagen {
@@ -139,4 +144,79 @@ section.Contenido {
     height: 45vh;
     box-shadow: 6px 6px 5px #666262;
     margin: 0px auto;
+}
+
+.Apartados h3~p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.Apartados article>h3 {
+    font-family: "Lugrasimo", cursive;
+    font-size: 1.3em;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.Apartados h3+p::first-letter{
+    font-weight: bold;
+    font-size: 1.21em;
+}
+
+/* Seccion de pasatiempos */
+#Pasatiempos h2 {
+    font-family: "Lugrasimo", cursive;
+    font-size: 1.3em;
+    text-align: left;
+    margin: 20px auto;
+}
+
+#Pasatiempos img{
+    max-height: 300px;
+    max-width: 300px;
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+.Tarjetas article h3 {
+    font-family: "Lugrasimo", cursive;
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.Tarjetas article p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.Tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.Tarjetas article {
+    box-shadow: 0px 5px 5px #666262;
+    width: 49.5%;
+    margin: 10px 0px;
+    padding: 1.5% 20px;
+    border-radius: 10% 0%;
+    border: 5px solid #184c32;
+}
+
+/* footer */
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0px 0px;
+    background-color: #184c32;
+    color:#fcfbf3;
 }
