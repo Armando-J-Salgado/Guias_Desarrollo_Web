@@ -1,0 +1,48 @@
+/* RESULTADO 1 */
+/* RESET */
+* {
+    padding:0;
+    margin:0;
+}
+
+/* TITULO */
+h1 {
+    margin: 20px 50px;
+    width: 100%;
+    text-align: left;
+}
+
+/* CARTAS */
+#diez_de_diamantes {
+    position: absolute;
+    left: 100px;
+    z-index: 50;
+}
+
+#sota_de_diamantes {
+    position: absolute;
+    left: 115px;
+    top: 90px;
+    z-index: 40;
+}
+
+#reina_de_diamantes {
+    position: absolute;
+    left: 130px;
+    top: 105px;
+    z-index: 30;
+}
+
+#rey_de_diamantes {
+    position: absolute;
+    left: 145px;
+    top: 120px;
+    z-index: 20;
+}
+
+#as_de_diamantes {
+    position: absolute;
+    left: 161px;
+    top: 135px;
+    z-index: 10;
+}
