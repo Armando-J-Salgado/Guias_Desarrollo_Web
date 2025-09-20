@@ -14,12 +14,22 @@ header {
     background: #16A085;
     height: 130px;
     overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 20;
 }
 
 footer {
     margin-top: 20px;
     background: #16A085;
     height: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 30;
 }
 
 header div, footer div {
@@ -39,9 +49,13 @@ h2 {
 }
 
 section {
-    margin: 0 auto;
+    margin: 130px auto 50px;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
+    position: relative;
+    z-index: 10;
 }
 
 section article {
@@ -53,7 +67,6 @@ section article {
     padding: 1%;
     box-sizing: border-box;
     overflow: hidden;
-    float:left;
 }
 
 section article img {
