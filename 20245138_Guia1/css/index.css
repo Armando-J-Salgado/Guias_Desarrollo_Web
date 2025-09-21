@@ -7,7 +7,7 @@
 
 /* Fondo del cuerpo con imagen */
 body {
-    background-image: url(https://tse3.mm.bing.net/th/id/OIP.dhYkkoU8ao5EO5hDrmef5AHaEo?r=0&cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-image: radial-gradient(circle, rgba(90, 26, 104, 0.3) 20%, rgb(42, 0, 51, 0.8) 80%), url(https://tse3.mm.bing.net/th/id/OIP.dhYkkoU8ao5EO5hDrmef5AHaEo?r=0&cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3);
     background-repeat: repeat;
     background-position: top;
     background-attachment:scroll;
@@ -16,46 +16,46 @@ body {
 
 /* Sección superior de la página */
 header {
-    background-color: rgb(5, 0, 14, 0.5);
+    background-color: rgb(5, 0, 14, 1);
     color: white;
-    padding-left: 1%;
-    padding-right: 0%;
-}
-
-/* Tabla interna de la sección superio */
-td {
-    border: none;
+    padding: 2vh 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 50;
+    height: 12vh;
 }
 
 /* Título */
-#Nombre {
-    padding: 10px 30px 10px 10px;
-    font-size: 0.8rem;
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.Titulo {
-    font-size: 10px;
+header h1 {
+    font-size: 2.5rem;
     font-weight: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #faf390;
 }
 
 /* Menú de navegación */
-#Navegacion {
-    width: 80%;
+header ul {
     font-size: 1.2rem;
     padding: 10px 10px 10px 10px;
     text-align: right;
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
+    font-size: 1.5em;
 }
 
 .menu {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     gap: 75px;
 }
 
@@ -67,7 +67,7 @@ td {
 
 .menu a:hover {
     color:blueviolet;
-    font-size: 1.3rem;
+    font-size: 1.1em;
     transition: 0.4s;
 }
 
@@ -75,92 +75,152 @@ td {
 main {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 12vh;
+    margin-bottom: 8vh;
 }
 
-/* Tabla principal */
-main table {
-    margin: 20px 10% 20px 10%;
+#Portada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 5vw;
+    padding-top: 20px;
 }
 
 /* Celda de la imagen */
-#imagen {
-    justify-content: left;
-}
-
-/* Configuración de la imagen */
-#imagen img {
-    width: 80%;
+#Portada img {
+    height: 70vh;
     max-width: 600px;
-    height: auto;
     display: block;
 }
 
 /* efecto de la imagen con cursor */
-#imagen img:hover {
-    width: 85%;
+#Portada img:hover {
+    transform: scale(1.10);
     transition: 2.0s;
 }
 
+.Texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
 /* celda de información */
-#informacion {
+.Texto p {
     font-size: 1.5em;
 }
 
 /* efecto del cursor sobre párrafos dentro de la celda de información */
-#informacion p:hover {
-    font-size: 1.05em;
+.Texto p:hover {
+    font-size: 1.75em;
     color:yellow;
     transition: 1.5s;
 }
 
 /* efecto del cursor sobre el título dentro de la celda de información */
-#informacion h2:hover {
-    font-size: 1.55em;
+.Texto h2:hover {
+    font-size: 2.05em;
     transition: 1.5s;
     color:aqua;
 }
 
 /* Título de la celda de información */
-#informacion h2 {
+.Texto h2 {
     color: #fcf6a0;
+    font-size: 2em;
 }
 
-#informacion h2 span {
-    font-size: 1.35em;
+.Texto h2 span {
+    font-size: 1.5em;
     line-height: normal;
     color:#faf390;
 }
 
+/* Contenedor de listas */
 .LinksGuias {
-    margin: 20px 10%;
-}
-
-.LinksGuias h2 {
-    font-size: 2.25em;
-    text-align: center;
-    color: #faf390;
-}
-
-.LinksGuias h2:hover {
-    font-size: 2.55em;
-    transition: 1.5s;
-    color:aqua;
+    display: flex;
+    flex-direction: column;
 }
 
 .LinksGuias ul {
     list-style: none;
-    text-align: center;
-    font-size: 1.75em;
+    font-size: 1em;
+    margin: 10px 10%;
 }
 
-.LinksGuias a {
+/* Encabezado de cada sublista */
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(85, 1, 85, 0.3);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.bar input {
+    appearance: none;
+    background-color: rgb(67, 18, 114);
+    border-radius: 8px;
+    border: none;
+    padding: 5px 20px;
+    margin: 0px 2.5%;
+    width: 50px;
+    height: 50px;
+}
+
+.bar input:checked {
+    background-color: rgb(132, 44, 214);
+}
+
+.LinksGuias ul>li>.bar>h2 {
+    font-size: 2.25em;
+    text-align: left;
+    color: #faf390;
+    margin: 10px;
+}
+
+.LinksGuias ul>li>.bar>h2:hover {
+    transform: scale(1.025);
+    padding: 0 2.5%;
+    color:aqua;
+    transition: 1.5s;
+}
+
+/* Modificadores de la sublista */
+.LinksGuias ul > li > .bar:has(input[type="checkbox"]:checked) ~ ul {
+    display: block;
+}
+
+.LinksGuias ul>li>ul{
+    display: none;
+    margin: 5px 0;
+    padding: 0;
+    border-radius: 5px;
+    text-align: left;
+    background-color: rgba(85, 1, 85, 0.3);
+}
+
+.LinksGuias ul>li>ul>li:hover{
+    background-color: rgba(85, 1, 85, 0.5);
+}
+
+/* Links de las sublistas */
+.LinksGuias ul>li>ul>li>a {
     text-decoration: none;
     text-align: center;
     color:white;
+    font-size: 1.75em;
+    padding: 0 10%;
 }
 
 .LinksGuias a:hover {
-    font-size: 1.05em;
+    font-size: 2em;
     color:yellow;
     transition: 1.5s;
 }
@@ -168,10 +228,16 @@ main table {
 /* Footer */
 footer{
     text-align: center;
-    background-color: rgb(240, 248, 255, 0.25);
+    background-color: rgb(5, 0, 14, 1);
     padding: 10px 30px 10px 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
     color: wheat;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh;
 }

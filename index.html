@@ -8,69 +8,72 @@
 </head>
 <body>
     <header>
-        <table>
-            <tbody>
-                <tr>
-                    <td id = "Nombre">
-                        <h1>Menú de inicio</h1>
-                    </td>
-                    <td id = "Navegacion">
-                        <ul class = "menu">
-                            <li><a href="#Guia1">Guía #1</a></li>
-                            <li><a href="#Guia2">Guía #2</a></li>
-                            <li><a href="#">Guía #3</a></li>
-                            <li><a href="#">Guía #4</a></li>
-                            <li><a href="#">Guía #5</a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h1>Menú de inicio</h1>
+        <ul class = "menu">
+            <li><a href="#Guia1">Guía #1</a></li>
+            <li><a href="#Guia2">Guía #2</a></li>
+            <li><a href="#Guia3">Guía #3</a></li>
+            <li><a href="#">Guía #4</a></li>
+            <li><a href="#">Guía #5</a></li>
+        </ul>
     </header>
     <main>
-        <table>
-            <tbody>
-                <tr>
-                    <td id = "informacion">
-                        <section>
-                            <h2>Guías prácticas:<br><span>HTML, CSS y Javascript</span></h2>
-                            <p>Armando José Salgado Rosa</p>
-                            <p>Escuela Superior de Economía y Negocios</p>
-                            <p>Desarrollo Web I</p>
-                            <p>Maestro Guillermo Calderón</p>
-                            <p>Domingo, 14 de septiembre de 2025</p>
-                        </section>
-                    </td>
-                    <td id = "imagen">
-                        <img src="20245138_Guia1/img/logo.png" alt="Logo AS Technologies">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="Portada">
+            <section class = "Texto">
+                <h2>Guías prácticas:<br><span>HTML, CSS y Javascript</span></h2>
+                <p>Armando José Salgado Rosa</p>
+                <p>Escuela Superior de Economía y Negocios</p>
+                <p>Desarrollo Web I</p>
+                <p>Maestro Guillermo Calderón</p>
+                <p>Domingo, 21 de septiembre de 2025</p>
+            </section>
+            <img src="20245138_Guia1/img/logo.png" alt="Logo AS Technologies">
+        </div>
         <section class="LinksGuias">
-            <article id="Guia1">
-                <h2>Guía 1: Estilos CSS y HTML</h2>
-                <ul>
-                    <li><a href="20245138_Guia1/estilos_embebidos.html">Ejemplo 1</a></li>
-                    <li><a href="20245138_Guia1/ejemplo2.html">Ejemplo 2</a></li>
-                    <li><a href="20245138_Guia1/paises.html">Ejemplo 3</a></li>
-                    <li><a href="20245138_Guia1/ejemplo1.html">Ejemplo 1 corregido</a></li>
-                    <li><a href="20245138_Guia1/programa_favorito.html">Ejercicio</a></li>
-                </ul>
-            </article>
-            <article id="Guia2">
-                <h2>Guía 2: Selectores CSS avanzados y modelo de caja</h2>
-                <ul>
-                    <li><a href="20245138_Guia2/pelicula.html">Ejercicio 1: Película</a></li>
-                    <li><a href="20245138_Guia2/tablero.html">Ejercicio 2: Tablero</a></li>
-                    <li><a href="20245138_Guia2/biografia.html">Ejercicio 3 y 4: Biografía</a></li>
-                </ul>
-            </article>
+            <ul>    
+                <li>
+                    <div class="bar">
+                        <h2 id="Guia1">Guía 1: Estilos CSS y HTML</h2>
+                        <input type="checkbox">
+                    </div>
+                    <ul>
+                        <li><a href="20245138_Guia1/estilos_embebidos.html">🔗 Ejemplo 1</a></li>
+                        <li><a href="20245138_Guia1/ejemplo2.html">💾 Ejemplo 2</a></li>
+                        <li><a href="20245138_Guia1/paises.html">🏙️ Ejemplo 3</a></li>
+                        <li><a href="20245138_Guia1/ejemplo1.html">🔧 Ejemplo 1 corregido</a></li>
+                        <li><a href="20245138_Guia1/programa_favorito.html">🍿 Ejercicio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="bar">
+                        <h2 id="Guia2">Guía 2: Selectores CSS avanzados y modelo de caja</h2>
+                        <input type="checkbox">
+                    </div>
+                    <ul>
+                        <li><a href="20245138_Guia2/pelicula.html">🎬 Ejercicio 1: Película</a></li>
+                        <li><a href="20245138_Guia2/tablero.html">♟️ Ejercicio 2: Tablero</a></li>
+                        <li><a href="20245138_Guia2/biografia.html">👤 Ejercicio 3 y 4: Biografía</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="bar">
+                        <h2 id="Guia3">Guía 3: Posicionamiento, visualización y maquetación de sitios web</h2>
+                        <input type="checkbox">
+                    </div>
+                    <ul>
+                        <li><a href="20245138_Guia3/oscares.html">🏆 Ejemplo 1: Oscares</a></li>
+                        <li><a href="20245138_Guia3/menu_horizontal.html">ℹ️ Ejemplo 2: Menú horizontal</a></li>
+                        <li><a href="20245138_Guia3/index.html">📷 Ejemplo y ejercicio 3: Index, planes y galeria</a></li>
+                        <li><a href="20245138_Guia3/analisis.html">♠️ Ejercicio 1A: Análisis (Ascendiente)</a></li>
+                        <li><a href="20245138_Guia3/analisis2.html">♦️ Ejercicio 1B: Análisis (Descendiente)</a></li>
+                        <li><a href="20245138_Guia3/oscares2.html">⭐ Ejercicio 2: Oscares corregido</a></li>
+                    </ul>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
         <p>Desarrollado en Visual Studio Code por AS Technologies<sup>TM</sup></p>
-        <p><sub>Para ver más, visita cada link en la barra de navegación</sub></p>
     </footer>
 </body>
 </html>
