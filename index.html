@@ -1,34 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú</title>
-    <link href="20245138_Guia1/css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Portafolio</title>
+    <link href="20245138_Guia4/css/portafolio.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa7b3e318e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- PARTE SUPERIOR -->
     <header>
-        <h1>Menú de inicio</h1>
+        <div id="logo">
+            <h1>AS</h1>
+            <img src="20245138_Guia1/img/logo.png" alt="">
+        </div>
         <ul class = "menu">
-            <li><a href="#Guia1">Guía #1</a></li>
-            <li><a href="#Guia2">Guía #2</a></li>
-            <li><a href="#Guia3">Guía #3</a></li>
-            <li><a href="#">Guía #4</a></li>
-            <li><a href="#">Guía #5</a></li>
+            <li><a href="#Portada">Inicio</a></li>
+            <li><a href="#Biografia">Biografía</a></li>
+            <li><a href="#Materia">Curso</a></li>
+            <li><a href="#Guias">Guías</a></li>
+            <li><a href="#Foda">FODA</a></li>
         </ul>
     </header>
+
+    <!-- CUERPO DE LA PÁGINA -->
     <main>
-        <div id="Portada">
-            <section class = "Texto">
-                <h2>Guías prácticas:<br><span>HTML, CSS y Javascript</span></h2>
-                <p>Armando José Salgado Rosa</p>
-                <p>Escuela Superior de Economía y Negocios</p>
-                <p>Desarrollo Web I</p>
-                <p>Maestro Guillermo Calderón</p>
-                <p>Domingo, 21 de septiembre de 2025</p>
-            </section>
+        <!-- PORTADA CON INFORMACIÓN GENERAL -->
+        <div class="Franja">
             <img src="20245138_Guia1/img/logo.png" alt="Logo AS Technologies">
+            <section class = "Texto Portada">
+                <h2 id="Portada">Portafolio personal<br><span>HTML, CSS y Javascript</span></h2>
+                <p>Escuela Superior de Economía y Negocios</p>
+                <p>Armando José Salgado Rosa</p>
+                <p>20245138</p>
+                <p>Domingo, 26 de octubre de 2025</p>
+            </section>
         </div>
+
+        <!-- BIOGRAFÍA -->
+        <div class="Franja Biografia">
+            <section class="Texto">
+                <h2 id="Biografia" class="ancla">Biografía</h2>
+                <p>
+                    Armando José Salgado Rosa es un joven salvadoreño apasionado por el desarrollo de
+                     software y el emprendimiento. Actualmente cursa el segundo año de Ingeniería de 
+                     Software y Negocios Digitales en la ESEN, donde ha destacado por su rendimiento 
+                     académico y liderazgo como director financiero de la Sociedad de Alumnos Emprendedores. 
+                     Ha participado en competencias como la Copa Salvadoreña de Programación y EspacioTech 
+                     2024, y desarrolla proyectos como NORT3, una plataforma de capacitación digital para 
+                     MYPES, y agentes de IA aplicados a microemprendimientos. Su trayectoria combina 
+                     excelencia académica, compromiso social y creatividad tecnológica.
+                </p>
+            </section>
+            <img src="20245138_Guia2/img/perfil.jpg" alt="Foto personal de Armando">
+        </div>
+
+        <!-- DESCRIPCIÓN -->
+
+        <div class="Franja Curso">
+            <section class="Texto Curso">
+                <h2 id="Materia" class="ancla">Desarrollo Web I</h2>
+                <p>
+                    El curso Desarrollo Web I es una introducción práctica a la creación de aplicaciones 
+                    web, centrado en los fundamentos de HTML, CSS y JavaScript. A lo largo del ciclo, los 
+                    estudiantes aprenden a estructurar páginas web, aplicar estilos visuales, implementar 
+                    interactividad y comprender la arquitectura del front-end. Además, se desarrollan 
+                    habilidades para construir soluciones informáticas mediante algoritmos y buenas prácticas 
+                    de programación, culminando en un proyecto donde aplican lo aprendido de forma incremental.
+                </p>
+            </section>
+        </div>
+        <section class="Contenido">
+            <span><h2>Contenidos:</h2></span>
+            <ul>
+                <li>
+                <span>Unidad I: Introducción al HTML</span>
+                <ul>
+                    <li>Elementos HTML</li>
+                    <li>Semántica del HTML</li>
+                    <li>Atributos HTML</li>
+                </ul>
+                </li>
+
+                <li>
+                <span>Unidad II: Introducción a las hojas de estilo en cascada (CSS)</span>
+                <ul>
+                    <li>Selectores CSS</li>
+                    <li>Propiedades CSS</li>
+                    <li>Modelo de caja</li>
+                </ul>
+                </li>
+
+                <li>
+                <span>Unidad III: Maquetación de sitios web</span>
+                <ul>
+                    <li>Posicionamiento y visualización</li>
+                    <li>Diseño de layout básico</li>
+                    <li>Diseño responsivo y media queries</li>
+                    <li>Introducción a Flexbox</li>
+                    <li>CSS Grid</li>
+                </ul>
+                </li>
+
+                <li>
+                <span>Unidad IV: Frameworks de diseño web responsivo</span>
+                <ul>
+                    <li>Malla de Bootstrap</li>
+                    <li>Utilidades para Bootstrap</li>
+                    <li>Elementos Bootstrap</li>
+                </ul>
+                </li>
+
+                <li>
+                <span>Unidad V: Introducción a JavaScript</span>
+                <ul>
+                    <li>Sintaxis básica</li>
+                    <li>Estructuras de control</li>
+                    <li>Arreglos y objetos</li>
+                    <li>Funciones y eventos</li>
+                    <li>Programación orientada a objetos</li>
+                </ul>
+                </li>
+
+                <li>
+                <span>Unidad VI: El Modelo de Objetos del Documento (DOM) y JavaScript asíncrono</span>
+                <ul>
+                    <li>Manipulación del DOM</li>
+                    <li>Notación JSON</li>
+                    <li>Almacenamiento local: localStorage y sessionStorage</li>
+                    <li>Programación asíncrona</li>
+                    <li>AJAX</li>
+                    <li>Consumo de APIs</li>
+                    <li>Almacenamiento en Firebase</li>
+                </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- GUÍAS -->
+         <h1 id="Guias" class="ancla">Guías de desarrollo web</h1>
         <section class="LinksGuias">
             <ul>    
                 <li>
@@ -36,6 +146,14 @@
                         <h2 id="Guia1">Guía 1: Estilos CSS y HTML</h2>
                         <input type="checkbox">
                     </div>
+                    <p>
+                        Esta guía presenta los conceptos fundamentales del desarrollo web, explicando 
+                        la estructura básica de un documento HTML y cómo aplicar estilos con CSS. Se 
+                        abordan los tres métodos para incluir CSS (embebido, en línea y externo), el 
+                        uso de selectores básicos (universal, etiqueta, clase e ID), y propiedades 
+                        esenciales para estilizar textos y fuentes. Los ejercicios prácticos permiten 
+                        crear páginas web simples, aplicar estilos y publicar sus trabajos en GitHub Pages.
+                    </p>
                     <ul>
                         <li><a href="20245138_Guia1/estilos_embebidos.html">🔗 Ejemplo 1</a></li>
                         <li><a href="20245138_Guia1/ejemplo2.html">💾 Ejemplo 2</a></li>
@@ -49,6 +167,14 @@
                         <h2 id="Guia2">Guía 2: Selectores CSS avanzados y modelo de caja</h2>
                         <input type="checkbox">
                     </div>
+                    <p>
+                        En esta guía se profundiza en el uso de selectores CSS avanzados como descendientes, 
+                        hijos directos, adyacentes, de atributos, pseudo-elementos y pseudo-clases. También 
+                        se introduce el modelo de caja (margin, border, padding, content), esencial para 
+                        entender la disposición de los elementos en la página. Los ejercicios incluyen la 
+                        creación de una página temática y un tablero de damas, aplicando estilos complejos 
+                        y selectores para lograr diseños más precisos y dinámicos.
+                    </p>
                     <ul>
                         <li><a href="20245138_Guia2/pelicula.html">🎬 Ejercicio 1: Película</a></li>
                         <li><a href="20245138_Guia2/tablero.html">♟️ Ejercicio 2: Tablero</a></li>
@@ -60,6 +186,14 @@
                         <h2 id="Guia3">Guía 3: Posicionamiento, visualización y maquetación de sitios web</h2>
                         <input type="checkbox">
                     </div>
+                    <p>
+                        Esta guía enseña cómo posicionar elementos en una página web usando los distintos tipos 
+                        de posicionamiento CSS (estático, relativo, absoluto, fijo y flotante), y cómo controlar 
+                        su visualización con propiedades como display, visibility, overflow y z-index. También se 
+                        trabaja en la maquetación de sitios web con diseños fijos y fluidos, incluyendo la creación 
+                        de menús horizontales multinivel y layouts adaptativos. Los ejercicios prácticos permiten 
+                        aplicar estos conceptos en la construcción de páginas completas con diseño profesional.
+                    </p>
                     <ul>
                         <li><a href="20245138_Guia3/oscares.html">🏆 Ejemplo 1: Oscares</a></li>
                         <li><a href="20245138_Guia3/menu_horizontal.html">ℹ️ Ejemplo 2: Menú horizontal</a></li>
@@ -69,11 +203,74 @@
                         <li><a href="20245138_Guia3/oscares2.html">⭐ Ejercicio 2: Oscares corregido</a></li>
                     </ul>
                 </li>
+                <li>
+                    <div class="bar">
+                        <h2 id="Guia4">Guía 4: Introducción al responsive design</h2>
+                        <input type="checkbox">
+                    </div>
+                    <p>
+                        Esta guía enseña cómo crear sitios web que se adapten a diferentes tamaños de pantalla y dispositivos, 
+                        utilizando técnicas de diseño responsivo. Se explican conceptos clave como el uso de la meta-etiqueta 
+                        viewport, estructuras fluidas, unidades relativas, y media queries. También se abordan estrategias como 
+                        "mobile first" y "desktop first", y se desarrollan layouts adaptativos para escritorio, tablet y móvil. 
+                        Los ejercicios incluyen la creación de una página web responsiva que actúe como portafolio estudiantil, 
+                        integrando datos personales, guías, y un análisis FODA del desempeño.
+                    </p>
+                    <ul>
+                        <li><a href="20245138_Guia4/mediaqueries.html">📱 Ejemplo 1: Mediaqueries</a></li>
+                        <li><a href="20245138_Guia4/">✈️ Ejemplo 2: Index, planes y galeria responsivos</a></li>
+                    </ul>
+                </li>
             </ul>
         </section>
+
+        <!-- FODA -->
+         <h2 id = "Foda"  class="ancla">FODA</h2>
+         <div class="matriz">
+            <article>
+                <h3>Fortalezas</h3>
+                <p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Maquetación de sitios con HTML utilizando etiquetas modernas</li>
+                        <li><i class="fa-solid fa-check"></i>Estilización de páginas web con selectores avanzados (Ej. ~ y nth-child)</li>
+                        <li><i class="fa-solid fa-check"></i>Diseño líquido y responsivo de páginas web</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h3>Oportunidades</h3>
+                <p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Uso de CSS para estilizar widgets en otros ámbitos de desarrollo</li>
+                        <li><i class="fa-solid fa-check"></i>Maquetación de sitios web y diseño de forma conjunta siguiendo un portafolio de marca</li>
+                        <li><i class="fa-solid fa-check"></i>Aprovechamiento de frameworks externos (Ej. Bootstrap)</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h3>Debilidades</h3>
+                <p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Importación de iconos a un HTML</li>
+                        <li><i class="fa-solid fa-check"></i>Integración de Javascript para páginas dinámicas</li>
+                        <li><i class="fa-solid fa-check"></i>Manejo de animaciones con CSS</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h3>Amenazas</h3>
+                <p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>El equipo utilizado para el desarrollo es demasiado básico (Hardware obsoleto)</li>
+                    </ul>
+                </p>
+            </article>
+         </div>
     </main>
     <footer>
         <p>Desarrollado en Visual Studio Code por AS Technologies<sup>TM</sup></p>
+        <p><i class="fa-solid fa-phone"></i>Teléfono de contacto: <span>7748-5039</span></p>
+        <p><i class="fa-solid fa-envelope"></i>Correo electrónico: <span>20245138@esen.edu.sv</span></p>
     </footer>
 </body>
 </html>
