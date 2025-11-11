@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/stylesFunciones.css" rel="stylesheet" />
+    <title>Ficha estudiantil</title>
+</head>
+
+<body class="mt-3 bg-secondary">    
+    <div class="container-lg">
+        <div class="row justify-content-center p-3">
+            <div class="col-9 shadow-lg p-3 mb-5 bg-body-tertiary rounded bg-light">
+                <h1 class="fs-2 mb-4 p-2 rounded text-center">
+                    Ficha de estudiantes de nuevo ingreso
+                </h1>
+
+                <form id="idForm">
+                    <div class="row g-3 mb-3">
+                        <div class="col-lg-3 justify-content-lg-start">
+                            <div class="form-floating mb-3">
+                                <input type="text" id="idTxtCarnet" class="form-control" 
+                                placeholder="AB001" />
+                                <label for="idTxtCarnet">
+                                    <i class="bi bi-person-bounding-box"></i> Carnet
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="form-floating mb-3">
+                                <input type="text" id="idTxtName" class="form-control" placeholder="" />
+                                <label for="idTxtName">
+                                    <i class="bi bi-person-circle"></i> Nombre completo
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-lg-6 justify-content-lg-start">
+                            <div class="form-floating mb-3">
+                                <input type="text" id="idTxtDui" class="form-control" 
+                                placeholder="AB001" />
+                                <label for="idTxtDui">
+                                    <i class="bi bi-person-bounding-box"></i> DUI
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" id="idTxtNit" class="form-control" placeholder="" />
+                                <label for="idTxtNit">
+                                    <i class="bi bi-person-circle"></i> NIT
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3  mb-4">
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="idTxtBirthDate" placeholder=""
+                                pattern="\d{2}-\d{2}-\d{4}"/>
+                                <label for="idTxtBirthDate">
+                                    <i class="bi bi-calendar-plus-fill"></i> Fecha de nacimiento
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="email" id="idTxtEmail" class="form-control" placeholder="" />
+                                <label for="idTxtEmail" />
+                                    <i class="bi bi-envelope"></i> Email
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="number" min="1" max="100" value="18" class="form-control" 
+                                id="idTxtAge" />
+                                <label for="idTxtAge">
+                                    <i class="bi bi-person-circle"></i> Edad
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn btn-success" id="idBtnGuardar" type="button">
+                                <i class="bi bi-bookmark-plus"></i> Registrar estudiante
+                            </button>
+                            <button class="btn btn-danger" id="idBtnReset" type="button">
+                                <i class="bi bi-trash-fill"></i> Limpiar formulario
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
