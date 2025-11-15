@@ -95,12 +95,24 @@
                         </div>
                     </div>
                 </form>
-
-
             </div>
-
         </div>
+         <!-- PERMITE MOSTRAR NOTIFICACIONES -->
+          <div class="toast-container top-0 start-50 translate-middle-x pt-4 mt-1" style="z-index:1035;">
+            <div id="idNotificacionRegistro" class="toast text-bg-success" role="alert" aria-live="assertive"
+            aria-atomic="true">
+                <div class="toast-header">
+                    <i class="bi bi-check2-circle"></i>
+                    <strong class="me-auto">Estudiante registrado</strong>
+                    <small>Hace un momento</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body" id="idMensajeRegistro">
+                </div>
+            </div>
+          </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ejercicio2.js"></script>
 </body>
 </html>
