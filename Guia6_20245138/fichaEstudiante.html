@@ -17,23 +17,35 @@
                     Ficha de estudiantes de nuevo ingreso
                 </h1>
 
-                <form id="idForm">
+                <form id="idForm" class="needs-validation">
                     <div class="row g-3 mb-3">
                         <div class="col-lg-3 justify-content-lg-start">
                             <div class="form-floating mb-3">
                                 <input type="text" id="idTxtCarnet" class="form-control" 
-                                placeholder="AB001" />
+                                placeholder="AB001" required/>
                                 <label for="idTxtCarnet">
                                     <i class="bi bi-person-bounding-box"></i> Carnet
                                 </label>
+                                <div class="valid-feedback">
+                                    ¡Carnet válido!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Formato inválido
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-9">
                             <div class="form-floating mb-3">
-                                <input type="text" id="idTxtName" class="form-control" placeholder="" />
+                                <input type="text" id="idTxtName" class="form-control" placeholder="" required/>
                                 <label for="idTxtName">
                                     <i class="bi bi-person-circle"></i> Nombre completo
                                 </label>
+                                <div class="valid-feedback">
+                                    ¡Nombre válido!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Debes incluir al menos un nombre y un apellido, sin números o símbolos
+                                </div>                                
                             </div>
                         </div>
                     </div>
@@ -41,18 +53,30 @@
                         <div class="col-lg-6 justify-content-lg-start">
                             <div class="form-floating mb-3">
                                 <input type="text" id="idTxtDui" class="form-control" 
-                                placeholder="AB001" />
+                                placeholder="12345678-9" required/>
                                 <label for="idTxtDui">
                                     <i class="bi bi-person-bounding-box"></i> DUI
                                 </label>
+                                <div class="valid-feedback">
+                                    ¡DUI válido!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Formato inválido, debe ser ########-#
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-floating mb-3">
-                                <input type="text" id="idTxtNit" class="form-control" placeholder="" />
+                                <input type="text" id="idTxtNit" class="form-control" placeholder="" required/>
                                 <label for="idTxtNit">
                                     <i class="bi bi-person-circle"></i> NIT
                                 </label>
+                                <div class="valid-feedback">
+                                    ¡NIT válido!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Formato inválido, debe ser ####-######-###-#
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -60,27 +84,45 @@
                         <div class="col-lg-4">
                             <div class="form-floating mb-3">
                                 <input type="date" class="form-control" id="idTxtBirthDate" placeholder=""
-                                pattern="\d{2}-\d{2}-\d{4}"/>
+                                pattern="\d{2}-\d{2}-\d{4}" required/>
                                 <label for="idTxtBirthDate">
                                     <i class="bi bi-calendar-plus-fill"></i> Fecha de nacimiento
                                 </label>
+                                <div class="valid-feedback">
+                                    ¡Fecha válida!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Formato inválido de fecha
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form-floating mb-3">
-                                <input type="email" id="idTxtEmail" class="form-control" placeholder="" />
+                                <input type="email" id="idTxtEmail" class="form-control" placeholder="" required/>
                                 <label for="idTxtEmail" />
                                     <i class="bi bi-envelope"></i> Email
                                 </label>
+                                <div class="valid-feedback">
+                                    ¡Correo válido!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Formato inválido
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form-floating mb-3">
                                 <input type="number" min="1" max="100" value="18" class="form-control" 
-                                id="idTxtAge" />
+                                id="idTxtAge" required/>
                                 <label for="idTxtAge">
                                     <i class="bi bi-person-circle"></i> Edad
                                 </label>
+                                <div class="valid-feedback">
+                                    ¡Edad válida!
+                                </div>
+                                <div class="invalid-feedback">
+                                    La edad no puede quedar vacía, negativa o mayor a 999
+                                </div>
                             </div>
                         </div>
                     </div>
